@@ -58,24 +58,31 @@ To set up the project:
 ## Features
 
 - **Data Preprocessing**:
-  - Dropped irrelevant columns (`id`, `Unnamed: 0`) and handled missing values in `bedrooms` and `bathrooms` by replacing them with the mean.
+    - The dataset contains house sale records in King County, USA, from May 2014 to May 2015.
+    - Columns like `id` and `Unnamed: 0` were dropped as they don't add value to the analysis.
+    - Missing values in the `bedrooms` and `bathrooms` columns were identified and replaced with the mean of those columns to ensure completeness of the dataset.
 
 - **Exploratory Data Analysis (EDA)**:
-  - Analyzed distribution of floors, waterfront price outliers, and correlation between house prices and square footage using visualizations (e.g., `value_counts()`, boxplots, and regression plots).
+    - **Floor Analysis**: A `value_counts()` analysis was done to display how many houses had different numbers of floors, giving insight into the distribution of house types by floor count.
+    - **Waterfront & Price Outliers**: A boxplot was generated to show the relationship between waterfront views and house prices, revealing that waterfront houses generally have higher prices and more price outliers.
+    - **Price vs. Square Footage**: A regression plot was created using `sqft_above` (above-ground living space) to determine its relationship with house prices, showing a positive correlation.
 
 - **Linear Regression Models**:
-  - **Simple Linear Regression**: 
-    - Used `sqft_living` to predict house prices, achieving an R² of 0.49.
-  - **Multiple Linear Regression**: 
-    - Built a model with multiple features (e.g., floors, bedrooms), improving R² to 0.65.
+    - **Simple Linear Regression**:
+        - Two simple linear regression models were created:
+            1. Using **longitude** as a feature to predict house prices, which yielded a low R² value (0.00047), indicating it’s not a strong predictor.
+            2. Using **sqft_living** (total living area), which resulted in an R² value of 0.49, suggesting that more living space is a better predictor of price than location.
+    - **Multiple Linear Regression**:
+        - A more complex model was created using multiple features (e.g., **floors**, **waterfront**, **bedrooms**, etc.), which improved the R² to 0.65, indicating a better fit for predicting house prices.
 
 - **Polynomial Regression**:
-  - Implemented a second-order polynomial model, yielding a better R² of 0.75.
+    - A pipeline was built using `PolynomialFeatures` to create a second-order polynomial regression model. The model performed better with an R² of 0.75, indicating that adding polynomial features (non-linear interactions between features) improves the prediction of house prices.
 
-- **Model Evaluation**:
-  - Performed train-test split (85%-15%) to assess model performance.
-  - **Ridge Regression**:
-    - Applied regularization, achieving an R² of 0.64, and improved to 0.70 with polynomial features.
+- **Model Evaluation & Refinement**:
+    - **Train-Test Split**: The data was split into training (85%) and testing (15%) sets to evaluate the model’s performance on unseen data.
+    - **Ridge Regression**:
+        - Ridge regression (a form of regularized linear regression) was used to handle overfitting. This model performed well with the test data, yielding an R² of 0.64.
+        - When combined with second-order polynomial features, the R² increased to 0.70, demonstrating an even better model for predicting house prices while controlling overfitting.
 
 
 ## Results
