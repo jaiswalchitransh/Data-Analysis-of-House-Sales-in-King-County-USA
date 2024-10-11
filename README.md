@@ -79,10 +79,22 @@ To set up the project:
 
 
 ## Results
-The following results were obtained from the analysis:
-- Linear Regression with `sqft_living` as a feature provided an R² score of 0.49.
-- Linear Regression using multiple features gave an R² score of 0.65.
-- Ridge Regression with second-order polynomial features provided the best model with an R² score of 0.70.
+
+1. **Simple Linear Regression**:
+   - **R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.
+
+2. **Multiple Linear Regression**:
+   - **R² Score**: 0.65 – Improved accuracy by incorporating more features (`bedrooms`, `bathrooms`, etc.).
+
+3. **Polynomial Regression (2nd Degree)**:
+   - **R² Score**: 0.75 – Best performance by capturing non-linear relationships.
+
+4. **Ridge Regression**:
+   - **R² Score**: 0.70 (with polynomial features) – Reduced overfitting, with slight performance improvement.
+
+5. **Summary**:
+   - **Best Model**: Polynomial Regression (R² = 0.75) for capturing both linear and non-linear patterns in house prices.
+
 
 ## Contribution
 I, **[Chitransh Jaiswal](https://www.linkedin.com/in/jaiswalchitransh/)** developed this Project Individually. I was responsible for all aspects of the project, including design, development, testing, and documentation.
