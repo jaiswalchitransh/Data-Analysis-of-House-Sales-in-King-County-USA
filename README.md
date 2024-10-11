@@ -89,17 +89,20 @@ To set up the project:
 
 
 1. **Simple Linear Regression**:
-   - **R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.
-   ![**R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%207.png)
+   ![**R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%207.png)
+    - **R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.
     
 
-3. **Multiple Linear Regression**:
+2. **Multiple Linear Regression**:
+   ![**R² Score**: 0.65 – Improved accuracy by incorporating more features (`bedrooms`, `bathrooms`, etc.)](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%208.png)
    - **R² Score**: 0.65 – Improved accuracy by incorporating more features (`bedrooms`, `bathrooms`, etc.).
 
-4. **Polynomial Regression (2nd Degree)**:
+3. **Polynomial Regression (2nd Degree)**:
+   ![**R² Score**: 0.75 – Best performance by capturing non-linear relationships)](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%2011.png)
    - **R² Score**: 0.75 – Best performance by capturing non-linear relationships.
 
-5. **Ridge Regression**:
+4. **Ridge Regression**:
+   ![**R² Score**: 0.70 (with polynomial features) – Reduced overfitting, with slight performance improvement](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%2014.png)
    - **R² Score**: 0.70 (with polynomial features) – Reduced overfitting, with slight performance improvement.
 
 6. **Summary**:
