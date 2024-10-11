@@ -130,4 +130,4 @@ Please ensure your contributions adhere to the coding standards and follow the e
 
 ---
 
-Thank you for exploring the Historical Stock and Revenue Data Analysis!
+Thank you for exploring the Data Analysis of House Sales in King County, USA!
