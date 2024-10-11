@@ -56,12 +56,27 @@ To set up the project:
 5. Evaluate the models using R² scores and polynomial transformations for better accuracy.
 
 ## Features
-- Data wrangling to clean and prepare the dataset.
-- Exploratory data analysis (EDA) for understanding patterns in house prices.
-- Machine learning models for predicting house prices:
-    - Linear Regression
-    - Ridge Regression with polynomial features.
-- Cross-validation for model evaluation.
+
+- **Data Preprocessing**:
+  - Dropped irrelevant columns (`id`, `Unnamed: 0`) and handled missing values in `bedrooms` and `bathrooms` by replacing them with the mean.
+
+- **Exploratory Data Analysis (EDA)**:
+  - Analyzed distribution of floors, waterfront price outliers, and correlation between house prices and square footage using visualizations (e.g., `value_counts()`, boxplots, and regression plots).
+
+- **Linear Regression Models**:
+  - **Simple Linear Regression**: 
+    - Used `sqft_living` to predict house prices, achieving an R² of 0.49.
+  - **Multiple Linear Regression**: 
+    - Built a model with multiple features (e.g., floors, bedrooms), improving R² to 0.65.
+
+- **Polynomial Regression**:
+  - Implemented a second-order polynomial model, yielding a better R² of 0.75.
+
+- **Model Evaluation**:
+  - Performed train-test split (85%-15%) to assess model performance.
+  - **Ridge Regression**:
+    - Applied regularization, achieving an R² of 0.64, and improved to 0.70 with polynomial features.
+
 
 ## Results
 The following results were obtained from the analysis:
