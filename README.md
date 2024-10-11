@@ -88,19 +88,32 @@ To set up the project:
 ## Results
 
 1. **Simple Linear Regression**:
-   - **R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.
+   - **Model**: Used `sqft_living` as the single feature.
+   - **Performance**: 
+     - **R² Score**: 0.49 (indicating that about 49% of the variance in house prices is explained by square footage).
+   - **Interpretation**: While `sqft_living` has a significant relationship with price, it alone isn't enough to predict prices accurately.
 
 2. **Multiple Linear Regression**:
-   - **R² Score**: 0.65 – Improved accuracy by incorporating more features (`bedrooms`, `bathrooms`, etc.).
+   - **Model**: Incorporated additional features (e.g., `bedrooms`, `bathrooms`, `floors`, `condition`, `waterfront`).
+   - **Performance**:
+     - **R² Score**: 0.65, showing improvement over the simple linear model.
+   - **Interpretation**: Including more features provides a better prediction, though some variance is still unexplained, indicating that other factors influence house prices.
 
 3. **Polynomial Regression (2nd Degree)**:
-   - **R² Score**: 0.75 – Best performance by capturing non-linear relationships.
+   - **Model**: Extended the linear model to include polynomial terms, allowing for non-linear relationships between features and prices.
+   - **Performance**:
+     - **R² Score**: 0.75, significantly higher than previous models.
+   - **Interpretation**: Capturing non-linear relationships between features and house prices greatly improves the model's predictive power.
 
 4. **Ridge Regression**:
-   - **R² Score**: 0.70 (with polynomial features) – Reduced overfitting, with slight performance improvement.
+   - **Model**: Applied Ridge regularization to the multiple linear regression model to reduce overfitting.
+   - **Performance**:
+     - **R² Score**: 0.64 (for the regular model) and **R² = 0.70** when polynomial features are used.
+   - **Interpretation**: Ridge regularization helps to balance model complexity and generalization, providing a slight performance boost with polynomial features.
 
-5. **Summary**:
-   - **Best Model**: Polynomial Regression (R² = 0.75) for capturing both linear and non-linear patterns in house prices.
+5. **Overall Model Comparison**:
+   - **Best Model**: Polynomial Regression (2nd Degree) outperforms all other models, with an R² of 0.75.
+   - **Takeaway**: The model captures more complexity in the relationships between house prices and the chosen features, showing that both linear and non-linear interactions play a role in accurate price prediction.
 
 
 ## Contribution
