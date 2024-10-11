@@ -34,9 +34,8 @@ To set up the project:
    - `seaborn`
    - `scikit-learn`
   
-     ```bash
-            pip install pandas numpy matplotlib seaborn scikit-learn
-     ```
+         pip install pandas numpy matplotlib seaborn scikit-learn
+     
 
 4. Open the project in Jupyter Notebook or any Python IDE.
 5. Run the script in your Python environment.
