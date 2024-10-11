@@ -84,30 +84,29 @@ To set up the project:
         - Ridge regression (a form of regularized linear regression) was used to handle overfitting. This model performed well with the test data, yielding an R² of 0.64.
         - When combined with second-order polynomial features, the R² increased to 0.70, demonstrating an even better model for predicting house prices while controlling overfitting.
 
-
 ## Results
 
 1. **Simple Linear Regression**:
    
-   ![**R² Score**: 0.49](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%207.png)
+   ![R² Score: 0.49](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%207.png)
     
     - **R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.
 
 2. **Multiple Linear Regression**:
    
-   ![**R² Score**: 0.65)](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%208.png)
+   ![R² Score: 0.65)](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%208.png)
 
    - **R² Score**: 0.65 – Improved accuracy by incorporating more features (`bedrooms`, `bathrooms`, etc.).
 
 3. **Polynomial Regression (2nd Degree)**:
 
-   ![**R² Score**: 0.75)](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%2011.png)
+   ![R² Score: 0.75)](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%2011.png)
 
    - **R² Score**: 0.75 – Best performance by capturing non-linear relationships.
 
 4. **Ridge Regression**:
 
-   ![**R² Score**: 0.70](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%2014.png)
+   ![R² Score: 0.70](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%2014.png)
 
    - **R² Score**: 0.70 (with polynomial features) – Reduced overfitting, with slight performance improvement.
 
