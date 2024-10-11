@@ -89,7 +89,8 @@ To set up the project:
 
 
 1. **Simple Linear Regression**:
-   - ![**R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%207.png)
+   - **R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.
+   ![**R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%207.png)
     
 
 3. **Multiple Linear Regression**:
