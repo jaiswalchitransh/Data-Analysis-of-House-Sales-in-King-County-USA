@@ -41,19 +41,25 @@ To set up the project:
 5. Run the script in your Python environment.
 
 ## Usage
-1. Load the dataset:
+To run the analysis, follow these steps:
+
+1. Open the `analyzer.ipynb` Jupyter Notebook in your preferred environment. You can use Jupyter Notebook or JupyterLab for this purpose.
+
+       jupyter notebook analyzer.ipynb
+
+2. Load the dataset:
     ```python
     file_name='https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/coursera/project/kc_house_data_NaN.csv'
     df = pd.read_csv(file_name)
     ```
-2. Preprocess the data by handling missing values and dropping irrelevant columns.
-3. Perform exploratory data analysis using visualizations such as boxplots and regression plots:
+3. Preprocess the data by handling missing values and dropping irrelevant columns.
+4. Perform exploratory data analysis using visualizations such as boxplots and regression plots:
     ```python
     sns.boxplot(x='waterfront', y='price', data=df)
     sns.regplot(x='sqft_above', y='price', data=df)
     ```
-4. Develop machine learning models using `LinearRegression` and `RidgeRegression` from `sklearn` to predict house prices based on features.
-5. Evaluate the models using R² scores and polynomial transformations for better accuracy.
+5. Develop machine learning models using `LinearRegression` and `RidgeRegression` from `sklearn` to predict house prices based on features.
+6. Evaluate the models using R² scores and polynomial transformations for better accuracy.
 
 ## Features
 
