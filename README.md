@@ -92,15 +92,15 @@ To run the analysis, follow these steps:
 
 ## Results
 
-1. **Simple Linear Regression**:
+1. **Baseline Linear Model**:
     
-    - **R² Score**: 0.49 – Limited prediction power with only `sqft_living` as a feature.
+    - **R² Score**: 0.49 – The simple linear regression model using sqft_living as the only predictor achieves an R² of approximately 0.49, indicating a moderate positive correlation between house size and price.
 
     ![R² Score: 0.49](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%207.png)
 
 2. **Multiple Linear Regression**:
 
-   - **R² Score**: 0.65 – Improved accuracy by incorporating more features (`bedrooms`, `bathrooms`, etc.).
+   - **R² Score**: 0.66 – Incorporating multiple features such as the number of bedrooms, bathrooms, grade, and waterfront views increases the R² value to 0.66, demonstrating a stronger predictive performance.
 
    ![R² Score: 0.65)](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%208.png)
 
@@ -110,16 +110,19 @@ To run the analysis, follow these steps:
   
    ![R² Score: 0.75)](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%2011.png)
 
-4. **Ridge Regression**:
+4. **Polynomial Ridge Regression**:
 
-   - **R² Score**: 0.70 (with polynomial features) – Reduced overfitting, with slight performance improvement.
+   - **R² Score**: 0.70 (with polynomial features) – A polynomial transformation combined with Ridge regularization further improves the model’s R² to 0.70, suggesting that non-linear relationships between the variables enhance the prediction of housing prices.
 
     ![R² Score: 0.70](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%2014.png)
 
 5. **Summary**:
 
    - **Best Model**: Polynomial Regression (R² = 0.75) for capturing both linear and non-linear patterns in house prices.
+  
+6. **Waterfront and House Prices**:
 
+   - From the box plot analysis, it is clear that houses with waterfront views tend to have significantly higher prices, with some extreme outliers.
 
 ## Contribution
 I, **[Chitransh Jaiswal](https://www.linkedin.com/in/jaiswalchitransh/)** developed this Project Individually. I was responsible for all aspects of the project, including design, development, testing, and documentation.
