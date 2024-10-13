@@ -94,7 +94,7 @@ To run the analysis, follow these steps:
 
 1. **Baseline Linear Model**:
     
-    - **R² Score**: 0.49 – The simple linear regression model using sqft_living as the only predictor achieves an R² of approximately 0.49, indicating a moderate positive correlation between house size and price.
+    - **R² Score**: 0.49 – The simple linear regression model using `sqft_living` as the only predictor achieves an R² of approximately 0.49, indicating a moderate positive correlation between house size and price.
 
     ![R² Score: 0.49](https://github.com/jaiswalchitransh/Data-Analysis-of-House-Sales-in-King-County-USA/blob/main/Sample%20Output/Sample%20Output%207.png)
 
